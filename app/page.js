@@ -1,17 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Countries from "../components/Countries";
+import Countries from "./components/Countries";
 
 export default function Home() {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    const getCountries = async (state) => {
-      const response = await "/api/countries";
+    const getCountries = async () => {
+      const response = await fetch("/api/countries");
       const countries = await response.json();
       setCountries(countries);
     };
+    getCountries();
   }, []);
 
   return (
