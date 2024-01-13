@@ -5,7 +5,7 @@ export default function Countries({ countries }) {
     <>
       <ul className="grid grid-cols-4 mx-auto max-w-[1260px] gap-10">
         {countries.map((country) => (
-          <li key={country.id} className="flex flex-col">
+          <li key={country.name.common} className="flex flex-col">
             <h3 className="text-2xl font-bold">
               {country.name.common} {country.flag}
             </h3>
@@ -25,6 +25,7 @@ export default function Countries({ countries }) {
             </p>
             <p>Population: {country.population}</p>
             <p>Capital city: {country.capital}</p>
+            <p>Time zone: {country.timezones}</p>
           </li>
         ))}
       </ul>
