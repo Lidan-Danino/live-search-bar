@@ -7,6 +7,7 @@ export const metadata = {
   title: "Country Info",
 };
 
+// Root layout component that wraps the entire application
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
