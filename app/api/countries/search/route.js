@@ -22,7 +22,6 @@ async function fetchCountries() {
 }
 
 // Next.js API route handling the GET request
-// Next.js API route handling the GET request
 export async function GET(request) {
   try {
     const countries = await fetchCountries();
