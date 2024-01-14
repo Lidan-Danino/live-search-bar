@@ -1,6 +1,6 @@
-## Getting Started
-
 ## Welcome to my Live Search Countries Project!!
+
+## Getting Started
 
 On my website you can search any country you want, sort by name or population, and get the most interesting information for each country !!
 API: "https://restcountries.com/v3.1/all"
